@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('bus_timetables', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("bus_routes");
+            $table->foreignId("bus_routes_id");
+            $table->time("departure_time");
             $table->timestamps();
         });
     }
