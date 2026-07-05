@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('bus_routes', function (Blueprint $table) {
             $table->id();
             $table->string("name");
+            $table->string("travel_time");
             $table->timestamps();
         });
     }
