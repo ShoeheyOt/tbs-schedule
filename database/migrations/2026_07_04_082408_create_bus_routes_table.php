@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("departure_point");
             $table->string("direction");
-            $table->string("travel_time");
+            $table->integer("travel_time");
             $table->timestamps();
         });
     }

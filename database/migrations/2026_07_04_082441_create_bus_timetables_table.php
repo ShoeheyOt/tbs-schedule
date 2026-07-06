@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bus_timetables', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("bus_routes_id");
+            $table->foreignId("bus_route_id")->constrained()->cascadeOnDelete();
             $table->time("departure_time");
             $table->timestamps();
         });
