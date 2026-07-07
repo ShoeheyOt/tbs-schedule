@@ -12,6 +12,11 @@ class BusRouteSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('bus_routes')->insert([
+            'departure_point'  => '成合中町',
+            'direction'        => 'outbound',
+            'travel_time'      =>  20,
+            'arrival_point'    => 'JR高槻駅'
+        ]);
     }
 }
