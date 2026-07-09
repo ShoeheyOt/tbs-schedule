@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             BusRouteSeeder::class,
+            BusTimetableSeeder::class,
         ]);
     }
 }
