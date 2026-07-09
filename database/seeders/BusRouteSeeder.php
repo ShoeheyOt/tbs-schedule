@@ -14,10 +14,47 @@ class BusRouteSeeder extends Seeder
     public function run(): void
     {
         DB::table('bus_routes')->insert([
-            'departure_point'  => '成合中町',
+            'departure_point'  => 'Nariai-Nakamachi',
             'direction'        => 'outbound',
             'travel_time'      =>  20,
-            'arrival_point'    => 'JR高槻駅'
+            'arrival_point'    => 'JR'
+        ]);
+
+        DB::table('bus_routes')->insert([
+            'departure_point'  => 'Nariai-Nakamachi',
+            'direction'        => 'outbound',
+            'travel_time'      =>  25,
+            'arrival_point'    => 'Hankyu'
+        ]);
+
+        DB::table('bus_routes')->insert([
+            'departure_point'  => 'central-park',
+            'direction'        => 'outbound',
+            'travel_time'      =>  20,
+            'arrival_point'    => 'JR'
+        ]);
+
+        DB::table('bus_routes')->insert([
+            'departure_point'  => 'JR-North',
+            'direction'        => 'inboud',
+            'travel_time'      =>  20,
+            'arrival_point'    => 'central-park'
+        ]);
+
+        DB::table('bus_routes')->insert([
+            'departure_point'  => 'JR-South',
+            'direction'        => 'inboud',
+            'travel_time'      =>  25,
+            'arrival_point'    => 'Nariai-Nakamachi'
+
+        ]);
+
+        DB::table('bus_routes')->insert([
+            'departure_point'  => 'Hankyu',
+            'direction'        => 'inboud',
+            'travel_time'      =>  20,
+            'arrival_point'    => 'Nariai-Nakamachi'
+
         ]);
     }
 }
