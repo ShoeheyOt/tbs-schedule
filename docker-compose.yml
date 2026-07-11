@@ -1,11 +1,11 @@
 version: '3.8'
-name: takatsuki-bus-service
+name: takatsuki-bus-transit-service
 
 services:
 
   web:
     image: nginx:alpine
-    container_name: tbs.web
+    container_name: tbs-service.web
     ports:
       - "8080:80"
     volumes:
@@ -20,7 +20,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: tbs.php
+    container_name: tbs-service.php
     volumes:
       - .:/var/www/html
     networks:
@@ -30,7 +30,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: tbs-db-container
+    container_name: tbs_db_container
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
