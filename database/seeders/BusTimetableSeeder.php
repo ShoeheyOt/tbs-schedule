@@ -94,5 +94,21 @@ class BusTimetableSeeder extends Seeder
             'bus_route_id'  =>  3,   //Nariai to JR
             'departure_time' => '08:56:00'
         ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '09:11:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '09:22:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '09:36:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '09:53:00'
+        ]);
     }
 }
