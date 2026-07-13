@@ -112,83 +112,127 @@ class BusTimetableSeeder extends Seeder
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '10:15:00'
+            'departure_time' => '10:06:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '10:39:00'
+            'departure_time' => '10:21:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '10:54:00'
+            'departure_time' => '10:36:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '11:08:00'
+            'departure_time' => '10:51:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '11:33:00'
+            'departure_time' => '11:16:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '12:03:00'
+            'departure_time' => '11:46:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '12:33:00'
+            'departure_time' => '12:16:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '13:03:00'
+            'departure_time' => '12:46:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '13:33:00'
+            'departure_time' => '13:16:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '14:03:00'
+            'departure_time' => '13:46:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '14:33:00'
+            'departure_time' => '14:16:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '15:03:00'
+            'departure_time' => '14:46:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '15:33:00'
+            'departure_time' => '15:16:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '16:00:00'
+            'departure_time' => '15:43:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '16:27:00'
+            'departure_time' => '16:10:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '16:47:00'
+            'departure_time' => '16:30:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '17:01:00'
+            'departure_time' => '16:45:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '17:23:00'
+            'departure_time' => '17:05:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '17:36:00'
+            'departure_time' => '17:30:00'
         ]);
         DB::table('bus_timetables')->insert([
             'bus_route_id'  =>  3,   //Nariai to JR
-            'departure_time' => '17:48:00'
+            'departure_time' => '17:50:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '18:05:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '18:20:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '18:39:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '19:00:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '19:20:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '19:39:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '20:01:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '20:25:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '20:50:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '21:15:00'
+        ]);
+        DB::table('bus_timetables')->insert([
+            'bus_route_id'  =>  3,   //Nariai to JR
+            'departure_time' => '21:39:00'
         ]);
     }
 }
