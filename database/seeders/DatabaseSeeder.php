@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
             BusTimetableSeeder::class,
             RouteOutboudToJRNorthTimetableSeeder::class,
             RouteInboundToChuoTimetableSeeder::class,
+            RouteInboundJRToNariaiTimetableSeeder::class,
+            RouteInboundHankyuToNariaiTimetableSeeder::class
         ]);
     }
 }

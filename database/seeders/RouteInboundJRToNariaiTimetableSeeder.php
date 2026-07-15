@@ -6,336 +6,329 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class BusTimetableSeeder extends Seeder
+class RouteInboundJRToNariaiTimetableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        //Nariai to JR/Hankyu
         DB::table('bus_timetables')->insert([
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '06:05:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '06:19:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '06:15:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '06:29:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '06:26:00',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'bus_route_id'  =>  1,   //Nariai to JR
+                'bus_route_id'  =>  5,   //JR to Nariai
                 'departure_time' => '06:40:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '06:53:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '06:54:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:01:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '07:08:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:07:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '07:16:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:14:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '07:23:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:22:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '07:37:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:28:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '07:53:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:36:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:00:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:43:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:07:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:50:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:15:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '07:58:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:31:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '08:04:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:44:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '08:13:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '08:57:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '08:26:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '09:13:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '08:39:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '09:29:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '08:56:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '09:40:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '09:11:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '09:54:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '09:22:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '10:15:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '09:36:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '10:39:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '09:53:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '10:54:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '10:06:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '11:08:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '10:21:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '11:33:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '10:36:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '12:03:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '10:51:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '12:33:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '11:16:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '13:03:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '11:46:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '13:33:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '12:16:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '14:03:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '12:46:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '14:33:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '13:16:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '15:03:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '13:46:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '15:33:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '14:16:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '16:00:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '14:46:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '16:27:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '15:16:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '16:47:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '15:43:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '17:01:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '16:10:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '17:23:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '16:30:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '17:36:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '16:45:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '17:48:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '17:05:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '18:08:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '17:30:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '18:22:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '17:50:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '18:36:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '18:05:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '18:56:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '18:20:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '19:16:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '18:39:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '19:36:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '19:00:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '19:53:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '19:20:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '20:16:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '19:39:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '20:40:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '20:01:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '21:05:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '20:25:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '21:30:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '20:50:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '21:54:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '21:15:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '22:10:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'bus_route_id'  =>  1,   //Nariai to JR
-                'departure_time' => '21:39:00',
+                'bus_route_id'  =>  5,   //JR to Nariai
+                'departure_time' => '22:32:00',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
