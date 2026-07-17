@@ -9,6 +9,10 @@ class BusTimetable extends Model
 {
     protected $table = 'bus_timetables';
 
+    protected $casts = [
+        'departure_time' => 'datetime:H:i'
+    ];
+
     public function busRoute(): BelongsTo
     {
         return $this->belongsTo(BusRoute::class);
