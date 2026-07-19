@@ -35,9 +35,9 @@ new class extends Component
         <table>
             <thead>
                 <tr>
-                    <th scope="col">Departure</th>
-                    <th scope="col">Direction</th>
-                    <th scope="col">Arrival Point</th>
+                    <th>Departure</th>
+                    <th>Direction</th>
+                    <th>Arrival Point</th>
                 </tr>
             </thead>
             <tbody>
@@ -62,7 +62,7 @@ new class extends Component
         <table>
             <thead>
                 <tr>
-                    <th scope="col">timetable</th>
+                    <th>timetable</th>
                 </tr>
             </thead>
             <tbody>
