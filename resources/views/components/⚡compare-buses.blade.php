@@ -1,6 +1,8 @@
 <?php
 
 use Livewire\Component;
+use App\Models\BusRoute;
+use App\Models\BusTimetable;
 
 new class extends Component
 {
@@ -8,11 +10,15 @@ new class extends Component
 
     public $routes = [];
 
+    public $timetables = [];
+
     public function mount()
     {
          $this->currentTime = now()->format('H:i');
 
-         $this->routes = DB::table('bus_routes')->get();
+         $this->routes = BusRoute::all();
+
+         $this->timetables = BusTimetable::where('bus_route_id', 1)->get();
     }
 };
 ?>
@@ -26,11 +32,49 @@ new class extends Component
     </div>
     <div style="margin: 20px; padding: 20px; background: #f5f5f5; border-radius: 8px; display: inline-block;">
         <p style="margin: 0; color: #666;">routes</p>
-        @foreach ($routes as $route)
-            <li>
-                {{ $route->departure_point}}
-            </li>
-        @endforeach
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Departure</th>
+                    <th scope="col">Direction</th>
+                    <th scope="col">Arrival Point</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach ($routes as $route)
+                <tr>
+                    <th>
+                        {{ $route->departure_point}}
+                    </th>
+                    <td>
+                        {{ $route->direction}}
+                    </td>
+                    <td>
+                        {{ $route->arrival_point}}
+                    </td>
+                    <td>
+                        {{ $route->busTimetable->first()?->departure_time}}
+                    </td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">timetable</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach ($timetables as $timetable)
+                <tr>
+                    <td>
+                        {{ $timetable->departure_time }}
+                    </td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
     </div>
 
 </div>
