@@ -5,7 +5,7 @@ services:
 
   web:
     image: nginx:alpine
-    container_name: tbs-service.web
+    container_name: tbs.web
     ports:
       - "8080:80"
     volumes:
@@ -20,7 +20,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: tbs-service.php
+    container_name: tbs.php
     volumes:
       - .:/var/www/html
     networks:
