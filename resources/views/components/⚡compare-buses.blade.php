@@ -32,6 +32,15 @@ new class extends Component
     </div>
     <div style="margin: 20px; padding: 20px; background: #f5f5f5; border-radius: 8px; display: inline-block;">
         <p style="margin: 0; color: #666;">routes</p>
+        <select name="routes">
+            <option value="">-- Please select one --
+            </option>
+            @foreach ($routes as $route)
+            <option value={{$route->departure_point}}>
+                {{ $route->departure_point}}
+            </option>
+            @endforeach
+        </select>
         <table>
             <thead>
                 <tr>
