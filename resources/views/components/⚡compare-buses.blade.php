@@ -36,7 +36,7 @@ new class extends Component
     </div>
     <div style="margin: 20px; padding: 20px; background: #f5f5f5; border-radius: 8px; display: inline-block;">
         <p style="margin: 0; color: #666;">routes</p>
-        <select name="routes" wire:model="routeId">
+        <select name="routes" wire:model.live="routeId">
             <option value="">-- Please select one --
             </option>
             @foreach ($routes as $route)
@@ -45,6 +45,7 @@ new class extends Component
             </option>
             @endforeach
         </select>
+        <p>{{$routeId}}</p>
         <table>
             <thead>
                 <tr>
