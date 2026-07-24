@@ -12,14 +12,18 @@ new class extends Component
 
     public $timetables = [];
 
+    public int $routeId;
+
     public function mount()
     {
          $this->currentTime = now()->format('H:i');
 
          $this->routes = BusRoute::all();
+         $this->routeId =1;
 
-         $this->timetables = BusTimetable::where('bus_route_id', 1)->get();
+         $this->timetables = BusTimetable::where('bus_route_id', $this->routeId)->get();
     }
+
 };
 ?>
 
@@ -32,11 +36,11 @@ new class extends Component
     </div>
     <div style="margin: 20px; padding: 20px; background: #f5f5f5; border-radius: 8px; display: inline-block;">
         <p style="margin: 0; color: #666;">routes</p>
-        <select name="routes">
+        <select name="routes" wire:model="routeId">
             <option value="">-- Please select one --
             </option>
             @foreach ($routes as $route)
-            <option value={{$route->departure_point}}>
+            <option value={{$route->id}}>
                 {{ $route->departure_point}}
             </option>
             @endforeach
