@@ -79,8 +79,8 @@ new class extends Component
                     <th>timetable</th>
                 </tr>
             </thead>
-            <tbody>
-            @foreach ($timetables as $timetable)
+            <tbody wire:key="{{ $routeId }}">
+            @foreach (BusTimetable::where('bus_route_id', $this->routeId)->get() as $timetable)
                 <tr>
                     <td>
                         {{ $timetable->departure_time }}
