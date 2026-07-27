@@ -17,4 +17,14 @@ class BusTimetable extends Model
     {
         return $this->belongsTo(BusRoute::class);
     }
+
+    public function getHour()
+    {
+        return $this->departure_time->hour;
+    }
+
+    public function getMinute()
+    {
+        return $this->departure_time->minute;
+    }
 }

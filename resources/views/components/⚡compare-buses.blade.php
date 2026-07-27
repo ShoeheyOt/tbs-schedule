@@ -49,41 +49,25 @@ new class extends Component
         <table>
             <thead>
                 <tr>
-                    <th>Departure</th>
-                    <th>Direction</th>
-                    <th>Arrival Point</th>
-                </tr>
-            </thead>
-            <tbody>
-            @foreach ($routes as $route)
-                <tr>
-                    <th>
-                        {{ $route->departure_point}}
-                    </th>
-                    <td>
-                        {{ $route->direction}}
-                    </td>
-                    <td>
-                        {{ $route->arrival_point}}
-                    </td>
-                    <td>
-                        {{ $route->busTimetable->first()?->departure_time}}
-                    </td>
-                </tr>
-            @endforeach
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
                     <th>timetable</th>
                 </tr>
             </thead>
             <tbody wire:key="{{ $routeId }}">
+                <tr>
+                    <th>
+                        Hour
+                    </th>
+                    <th>
+                        Minute
+                    </th>
+                </tr>
             @foreach (BusTimetable::where('bus_route_id', $this->routeId)->get() as $timetable)
                 <tr>
                     <td>
-                        {{ $timetable->departure_time }}
+                        {{ $timetable->getHour() }}
+                    </td>
+                    <td>
+                        {{ $timetable->getMinute() }}
                     </td>
                 </tr>
             @endforeach
