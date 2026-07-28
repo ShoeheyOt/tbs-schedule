@@ -27,4 +27,20 @@ class BusTimetable extends Model
     {
         return $this->departure_time->minute;
     }
+
+    public function resolveTimetable(int $routeId)
+    {
+        $times = $this->query()->where('bus_route_id', $routeId)->get();
+
+        $hours = [];
+        $minutes = [];
+
+        foreach ($times as $time) {
+            $hour = $time->departure_time->hour;
+            $min = $time->departure_time->minute;
+            if (!in_array($time, $hour)) {
+                array_push($hours, $time);
+            }
+        }
+    }
 }
